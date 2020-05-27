@@ -49,9 +49,9 @@
     </header>
 
     <main>
-      <h1>Интернет-магазин товаров для ремонта</h1>
+      <h1 class="visually-hidden">Интернет-магазин товаров для ремонта</h1>
       <section>                  <!--PART1-->
-        <h2>Товары</h2>
+        <h2 class="visually-hidden">Товары</h2>
         <ul>
           <li>     <!--NEW-->
             <p>Материалы</p>
@@ -80,11 +80,13 @@
             <p>Перфораторы</p>
             <p>Настоящие мужские игрушки</p>
             <a href="inner.html">Открыть каталог</a>
+            <img src="img/content/perforator.jpg" width="620" height="266" alt="Рабочий со строительным перфоратором Bosch пробивает отверстие в стене">
           </li>
           <li>
             <p>Дрели</p>
             <p>Соседям на радость!</p>
             <a href="inner.html">Открыть каталог</a>
+            <img src="img/content/drill.jpg" width="620" height="266" alt="Рабочий с аккумуляторной дрелью Bosch сверлит отверстие в кирпичной кладке">
           </li>
         </ul>
 
@@ -295,5 +297,32 @@
         </p>
       </div>
     </footer>
+
+    <section>
+      <h2 class="visually-hidden">Напишите нам</h2>
+      <form action="http://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="write-us-name">Ваше имя:</label>
+          <input id="write-us-name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="write-us-email">Ваш e-mail:</label>
+          <input id="write-us-email" type="email" name="email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="write-us-letter">Текст письма:</label>
+          <textarea id="write-us-letter" type="text" name="letter" cols="40" rows="4" placeholder="В свободной форме"></textarea>
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+      <button type="button">Закрыть</button>
+    </section>
+
+    <section>
+      <h2 class="visually-hidden">Расположение нашего офиса</h2>
+      <!--IMG только большой формат, или выход на гугл-карты?-->
+      <button type="button">Закрыть</button>
+    </section>
+
   </body>
 </html>
